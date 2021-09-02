@@ -11,22 +11,30 @@
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
 
-<body>
-    <h1 class="text-center text-success">Search your favorite Book</h1>
+<body style="background-color:rgb(217, 240, 240)">
+    <h1 class="text-center py-2" style="color: darkslategrey;">Search your favorite Book</h1>
     <div class="input-group mb-3 w-50 mx-auto">
         <input id="search-field" type="text" class="form-control" placeholder="Search books you want">
-        <button onclick="searchbooks()" class="btn btn-outline-secondary" type="button"
+        <button onclick="searchbooks()" class="btn btn-outline-secondary" style="margin-left: 10px;" type="button"
             id="button-search">Search</button>
     </div>
-    <!-- <div>
+    <!-- alert-message -->
+    <div>
         <p id="alert-message" class="text-danger text-center">please write something to display !!</p>
-    </div> -->
+    </div>
     <!-- error message -->
-    <!-- <div>
-        <p id="error-message" class="text-danger">Something went wrong, Please try again later</p>
-    </div> -->
+    <div>
+        <p id="error-message" class="text-danger text-center">Something went wrong, Please try again later</p>
+    </div>
+    <!-- no result found -->
+    <div>
+        <p id="not-found-result" class="text-danger text-center">Not found result !!</p>
+    </div>
     <!-- show result -->
-    <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4">
+    <div id="search-result" class="row row-cols-1 row-cols-md-4 g-3">
+    </div>
+    <!-- search result numbers message -->
+    <div id="search-result-numbers">
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
