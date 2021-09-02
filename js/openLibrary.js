@@ -19,7 +19,7 @@ const searchbooks = async () => {
     {
         document.getElementById('alert-message').style.display = 'none';
         //load data
-        const url = ` http://openlibrary.org/search.json?q=${searchText}`;
+        const url = ` https://openlibrary.org/search.json?q=${searchText}`;
         try{
             const res = await fetch(url);
             const data = await res.json();
